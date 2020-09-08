@@ -17,6 +17,10 @@ app.post('/data', (req, res) => {
 	console.log('Post dari body : ', req.body)
 })
 
+app.post('/profile', (req, res) => {
+	res.send(req.body)
+})
+
 
 app.listen(port, () => {
 	console.log('Port sedang berjalan')
